@@ -1,6 +1,5 @@
-// About.js
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from "../Navbar/Navbar";
 import './About.css';
 import { TbBrandGithubCopilot } from "react-icons/tb";
 export default function About() {
@@ -31,7 +30,7 @@ export default function About() {
         </p>
       </div>
       <div className='footer'>
-      <TbBrandGithubCopilot className="git-logo-about" /><p>Happy Coding..</p>
+      <TbBrandGithubCopilot className="git-logo-about" />
       </div>
     </>
   );

@@ -16,6 +16,8 @@
     border-radius: 15px;
     background-color: #48BB78;
     color: #ffffff;
+    text-decoration: none;
+
 }
 .nav-bar, .left-nav-section ,.nav-links{
     display: flex;
