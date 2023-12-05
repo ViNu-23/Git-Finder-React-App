@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-links-rm, li{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    color: #000000;
+}
+
+.nav-links-rm:hover{
+    border-radius: 15px;
+    background-color: #48BB78;
+    color: #ffffff;
+}
+.nav-bar, .left-nav-section ,.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    justify-content:space-between;
+    padding: 10px 25px 10px 25px;
+    background-color: #F0FFF4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+}
+.git-logo{
+    width: 30px;
+    height: auto;
+    color: #2F855A;
+}
+.title{
+    padding-left: 15px;
+    font-weight:bolder
+}
