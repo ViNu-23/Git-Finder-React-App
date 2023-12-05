@@ -1,0 +1,40 @@
+/* About.css */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-container h1 {
+  color: #2f855a;
+}
+
+.about-container h2 {
+  color: #2f855a;
+  margin-top: 20px;
+}
+
+.about-container p {
+  margin-bottom: 15px;
+}
+
+.about-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+}
+.git-logo-about {
+  color: #2f855a;
+  height: auto;
+  width: 60px;
+  padding-right: 15px;
+}
+.footer{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
