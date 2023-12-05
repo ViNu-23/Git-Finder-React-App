@@ -33,5 +33,6 @@ export default function About() {
       <TbBrandGithubCopilot className="git-logo-about" />
       </div>
     </>
+    
   );
 }
