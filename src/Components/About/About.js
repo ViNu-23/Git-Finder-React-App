@@ -1,19 +1,19 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
 import './About.css';
-import { TbBrandGithubCopilot } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
 export default function About() {
   return (
     <>
       <Navbar />
       <div className="about-container">
-        <h1>About Git Finder</h1>
-        <p>
+        <h2>About Git Finder</h2>
+        <p className='about-text'>
           Git Finder is a web application that allows users to search for GitHub users by their usernames.
           Additionally, the app provides information about the repositories associated with the searched user.
         </p>
         <h2>Features</h2>
-        <ul>
+        <ul className='about-text'>
           <li>
             <strong>User Search:</strong> Users can enter a GitHub username in the search bar. The app fetches
             and displays information about the user, including their profile details and a list of repositories.
@@ -24,13 +24,14 @@ export default function About() {
           </li>
         </ul>
         <h2>Getting Started</h2>
-        <p>
-          To get started, clone the Git Finder repository and follow the installation instructions in the
-          <code>README.md</code> file.
+        <p className='about-text'>
+          To get started, clone the Git Finder repository and follow the installation instructions in the 
+          <code> README.md</code> file.
         </p>
       </div>
       <div className='footer'>
-      <TbBrandGithubCopilot className="git-logo-about" />
+        <span>Visit Profile</span>
+      <FaGithub  className='git-logo-about'/>
       </div>
     </>
     

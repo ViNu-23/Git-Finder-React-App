@@ -1,4 +1,6 @@
-/* About.css */
+*{
+  user-select: none;
+}
 .about-container {
   max-width: 800px;
   margin: 0 auto;
@@ -14,10 +16,6 @@
   margin-top: 20px;
 }
 
-.about-container p {
-  margin-bottom: 15px;
-}
-
 .about-container ul {
   list-style: none;
   padding: 0;
@@ -29,11 +27,19 @@
 .git-logo-about {
   color: #2f855a;
   height: auto;
-  width: 60px;
-  padding-right: 15px;
+  width: 35px;
+  padding-left: 10px;
 }
 .footer{
     text-align: center;
     justify-content: center;
     display: flex;
+    margin-bottom: 100px;
+}
+h2{
+  font-size: 25px;
+}
+.about-text{
+  font-size: 15px;
+  text-align:justify;
 }

@@ -4,7 +4,6 @@ import { TbBrandGithubCopilot } from "react-icons/tb";
 import "./Navbar.css";
 import { useState } from "react";
 
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,8 +18,11 @@ export default function Navbar() {
         <span className="title">Git-Finder</span>
       </div>
 
-      <div className={`menu-toggle ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
-       <div className={`bar1 ${isMenuOpen ? "rotate-down" : ""}`}></div>
+      <div
+        className={`menu-toggle ${isMenuOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
+        <div className={`bar1 ${isMenuOpen ? "rotate-down" : ""}`}></div>
         <div className={`bar2 ${isMenuOpen ? "hidden" : ""}`}></div>
         <div className={`bar3 ${isMenuOpen ? "rotate-up" : ""}`}></div>
       </div>
