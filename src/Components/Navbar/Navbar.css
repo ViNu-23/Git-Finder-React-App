@@ -117,3 +117,24 @@ li {
 .bar3.rotate-up {
   transform: translateY(-6px) rotate(45deg);
 }
+@keyframes glowingAnimation {
+  0% {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+  }
+  50% {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 0, 255), rgb(255, 0, 0));
+  }
+  100% {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0), rgb(0, 255, 0));
+  }
+}
+
+.glowing-title {
+  animation: glowingAnimation 5s linear infinite;
+}

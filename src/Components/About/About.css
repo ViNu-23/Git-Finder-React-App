@@ -2,9 +2,8 @@
   user-select: none;
 }
 .about-container {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
 }
 
 .about-container h1 {
@@ -34,7 +33,7 @@
     text-align: center;
     justify-content: center;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 h2{
   font-size: 25px;

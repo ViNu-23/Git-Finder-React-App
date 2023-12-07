@@ -1,21 +1,22 @@
 .user-data {
     min-width: 0;
     width: 250px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #ffffff;
     transition: transform 0.3s ease-in-out;
     text-align: center;
     color: #333;
-    margin: 25px 5px 20px 5px;
+    margin: 20px 5px 20px 5px;
   }
   
-  .user-data:hover {
-    transform: scale(1.015);
+  .know-more:hover {
+    transform: scale(1.1);
     box-shadow: #F0FFF4 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
   }
+
   .detail{
     font-weight: bolder;
   }
@@ -34,7 +35,7 @@
   }
 .container{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     flex-flow: wrap;
   }
   .input-search{
@@ -44,6 +45,3 @@
     align-items: center;
     margin-top: 25px;
   }
-.clear{
-  display: none;
-}

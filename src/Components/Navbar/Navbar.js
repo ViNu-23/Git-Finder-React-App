@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { TbBrandGithubCopilot } from "react-icons/tb";
 import "./Navbar.css";
-import { useState } from "react";
+import { React, useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +9,20 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const [clickCount, setClickCount] = useState(0);
 
+  const handleButtonClick = () => {
+    setClickCount((prevCount) => prevCount + 1);
+  };
+  const titleClassName = clickCount > 5 ? 'glowing-title' : '';
   return (
     <nav className="nav-bar">
       <div className="left-nav-section">
-        <TbBrandGithubCopilot className="git-logo" />
-        <span className="title">Git-Finder</span>
+        <Link to="https://github.com/ViNu-23">
+          <TbBrandGithubCopilot className="git-logo" />
+        </Link>
+
+        <span className={`title ${titleClassName}`} onClick={handleButtonClick}>Git-Finder</span>
       </div>
 
       <div
