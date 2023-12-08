@@ -1,4 +1,4 @@
-## React GitHub User Finder App
+# React GitHub User Finder App
 ### Overview
 This React application utilizes various technologies, including React Router, Fetch API, Async functions, Axios, and Chakra UI, to create a GitHub User Finder. The primary purpose of this app is to search for GitHub users based on their user ID and display relevant information about them.
 
