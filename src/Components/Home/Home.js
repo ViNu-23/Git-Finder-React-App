@@ -23,7 +23,7 @@ export default function Home({ userData }) {
       <Navbar />
       <div className="input-search">
         <Stack p="4" width='350px'>
-          <Input type="tel" placeholder="Search User" width='auto' value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
+          <Input type="text" placeholder="Search User" width='auto' value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
         </Stack>
 
         {inputValue&&(
