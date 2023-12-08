@@ -30,4 +30,4 @@ Clone the repository:
 Feel free to contribute to the development of this project by submitting bug reports, feature requests, or pull requests. Your feedback and contributions are highly appreciated.
 
 ## Live Demo
-https://findgitusersbyvinu-23.netlify.app/
+https://gitfinderreactapp.netlify.app/
