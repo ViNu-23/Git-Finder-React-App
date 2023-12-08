@@ -31,7 +31,10 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Home userData={user} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/know-more/:id" element={<KnowMore userData={user} />} />
+            <Route
+              path="/know-more/:id"
+              element={<KnowMore userData={user} />}
+            />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </Router>

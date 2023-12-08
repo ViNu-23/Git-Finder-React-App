@@ -14,7 +14,7 @@ export default function Navbar() {
   const handleButtonClick = () => {
     setClickCount((prevCount) => prevCount + 1);
   };
-  const titleClassName = clickCount > 5 ? 'glowing-title' : '';
+  const titleClassName = clickCount > 5 ? "glowing-title" : "";
   return (
     <nav className="nav-bar">
       <div className="left-nav-section">
@@ -22,7 +22,9 @@ export default function Navbar() {
           <TbBrandGithubCopilot className="git-logo" />
         </Link>
 
-        <span className={`title ${titleClassName}`} onClick={handleButtonClick}>Git-Finder</span>
+        <span className={`title ${titleClassName}`} onClick={handleButtonClick}>
+          Git-Finder
+        </span>
       </div>
 
       <div
