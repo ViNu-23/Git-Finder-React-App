@@ -1,4 +1,4 @@
-# React GitHub User Finder App
+## React GitHub User Finder App
 ### Overview
 This React application utilizes various technologies, including React Router, Fetch API, Async functions, Axios, and Chakra UI, to create a GitHub User Finder. The primary purpose of this app is to search for GitHub users based on their user ID and display relevant information about them.
 
@@ -18,34 +18,21 @@ Error Handling: In case of unsuccessful API requests or user not found, appropri
 
 Responsive Design: Utilizes Chakra UI to ensure a responsive and visually pleasing design, catering to different screen sizes and devices.
 
-Setup Instructions
+### Setup Instructions
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repo.git
-Install dependencies:
-
-bash
-Copy code
-cd your-repo
-npm install
-Run the application:
-
-bash
-Copy code
-npm start
-The app will be accessible at http://localhost:3000.
-
-Usage
+### Usage
 Open the app in your browser.
 
 Enter a GitHub user ID in the search bar and press Enter.
 
 View the details of the GitHub user, or handle errors if the user is not found.
 
-Contributing
+### Contributing
 Feel free to contribute to the development of this project by submitting bug reports, feature requests, or pull requests. Your feedback and contributions are highly appreciated.
 
-License
+### License
 This project is licensed under the MIT License.
+
+## Live Demo
+https://findgitusersbyvinu-23.netlify.app/
