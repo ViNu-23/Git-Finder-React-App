@@ -1,7 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
 import { Stack, Button, Input, Badge } from "@chakra-ui/react";
-import { Search2Icon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
