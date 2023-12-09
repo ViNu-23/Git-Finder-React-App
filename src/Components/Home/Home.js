@@ -7,12 +7,15 @@ import { useState } from "react";
 
 export default function Home({ userData }) {
   const [isClearVisible, setIsClearVisible] = useState(false);
+
   const [inputValue, setInputValue] = useState("");
+
+//if search btn clicked it makes clear button visible
   const handleSearchBtnClick = () => {
-    if (inputValue) {
       setIsClearVisible(true);
-    }
   };
+
+  // if click on 'clear button' it will disappear and it clear input field also
   const handleClearBtnClick = () => {
     setIsClearVisible(false);
     setInputValue("");
@@ -31,7 +34,8 @@ export default function Home({ userData }) {
             onChange={(e) => setInputValue(e.target.value)}
           />
         </Stack>
-        {/* display only when input field is true */}
+
+        {/* search button appear only when something typed in input field. ref:'inputValue' */}
         {inputValue && (
           <Button
             colorScheme="green"
@@ -39,11 +43,11 @@ export default function Home({ userData }) {
             type="submit"
             onClick={handleSearchBtnClick}
           >
-            <Search2Icon />
+            Search
           </Button>
         )}
-        {/* display only when search button has clicked */}
-        {isClearVisible && (
+        {/* display only when search button has clicked  and also not appear when input field clear after search*/}
+        {inputValue && isClearVisible && (
           <div className="clear">
             <Button
               colorScheme="gray"
@@ -53,7 +57,7 @@ export default function Home({ userData }) {
               onClick={handleClearBtnClick}
               mr="6"
             >
-              <CloseIcon />
+              Clear
             </Button>
           </div>
         )}
