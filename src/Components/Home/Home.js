@@ -3,26 +3,38 @@ import { Stack, Button, Input, Badge } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
+import { useToast } from "@chakra-ui/react";
 
 export default function Home({ userData }) {
   const [inputValue, setInputValue] = useState("");
   const [isClearVisible, setIsClearVisible] = useState(false);
   const [filteredData, setFilteredData] = useState([]);
 
+  //filtering user from jason data return filter user or false
   const filterUsers = (users, query) => {
     return users.filter(
       (user) => user.username.toLowerCase() === query.toLowerCase()
     );
   };
 
-  //if search btn clicked it makes clear button visible,search user
+  //if search btn clicked it makes clear button visible,sort user by name,chakra error toast
+  const toast = useToast();
   const handleSearchBtnClick = () => {
     const filteredUsers = filterUsers(userData, inputValue);
+    if (filteredUsers.length === 0) {
+      toast({
+        title: "User Not Found",
+        status: "error",
+        variant: "subtle",
+        duration: 2500,
+        isClosable: 1,
+      });
+    }
     setFilteredData(filteredUsers);
     setIsClearVisible(true);
   };
 
-  //makes clear button disappear,clear input field,create empty array
+  //makes clear button disappear,clear input field,back to normal list of 10 users
   const handleClearBtnClick = () => {
     setIsClearVisible(false);
     setInputValue("");
@@ -39,7 +51,7 @@ export default function Home({ userData }) {
         <Stack p="4" width="350px">
           <Input
             type="text"
-            placeholder="Search User"
+            placeholder="User name"
             width="auto"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
