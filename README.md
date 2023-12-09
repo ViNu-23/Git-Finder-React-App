@@ -15,14 +15,17 @@ This React application utilizes various technologies, including React Router, Fe
 <li>Axios: An HTTP client for making requests to the GitHub API, providing a more convenient interface for handling HTTP requests.</li>
 <li>Chakra UI: A modular component library for React applications, facilitating the creation of visually appealing and responsive UI components.</li>
 </ol>
+
 ## Features
-User Search: Users can input a GitHub user ID in the search bar, triggering a request to the GitHub API to fetch user details.
+<ul>
+<li>User Search: Users can input a GitHub user ID in the search bar, triggering a request to the GitHub API to fetch user details.</li>
 
-User Details: The app displays relevant details about the GitHub user, such as their avatar, username, bio, and other public information.
+<li>User Details: The app displays relevant details about the GitHub user, such as their avatar, username, bio, and other public information.</li>
 
-Error Handling: In case of unsuccessful API requests or user not found, appropriate error messages are displayed to the user.
+<li>Error Handling: In case of unsuccessful API requests or user not found, appropriate error messages are displayed to the user.</li>
 
-Responsive Design: Utilizes Chakra UI to ensure a responsive and visually pleasing design, catering to different screen sizes and devices.
+<li>Responsive Design: Utilizes Chakra UI to ensure a responsive and visually pleasing design, catering to different screen sizes and devices.</li>
+</ul>
 
 ## Setup Instructions
 Clone the repository:
