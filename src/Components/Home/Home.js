@@ -1,24 +1,36 @@
-import Navbar from "../Navbar/Navbar";
-import "./Home.css";
+import React, { useState } from "react";
 import { Stack, Button, Input, Badge } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import Navbar from "../Navbar/Navbar";
+import "./Home.css";
 
 export default function Home({ userData }) {
-  const [isClearVisible, setIsClearVisible] = useState(false);
-
   const [inputValue, setInputValue] = useState("");
+  const [isClearVisible, setIsClearVisible] = useState(false);
+  const [filteredData, setFilteredData] = useState([]);
 
-//if search btn clicked it makes clear button visible
-  const handleSearchBtnClick = () => {
-      setIsClearVisible(true);
+  const filterUsers = (users, query) => {
+    return users.filter(
+      (user) => user.username.toLowerCase() === query.toLowerCase()
+    );
   };
 
-  // if click on 'clear button' it will disappear and it clear input field also
+  //if search btn clicked it makes clear button visible,search user
+  const handleSearchBtnClick = () => {
+    const filteredUsers = filterUsers(userData, inputValue);
+    setFilteredData(filteredUsers);
+    setIsClearVisible(true);
+  };
+
+  //makes clear button disappear,clear input field,create empty array
   const handleClearBtnClick = () => {
     setIsClearVisible(false);
     setInputValue("");
+    setFilteredData([]);
   };
+
+  //if filter data has some value-'true'-display filterData otherwise original userData mean actual fetched json
+  const renderUsers = filteredData.length ? filteredData : userData;
 
   return (
     <>
@@ -33,7 +45,6 @@ export default function Home({ userData }) {
             onChange={(e) => setInputValue(e.target.value)}
           />
         </Stack>
-
         {/* search button appear only when something typed in input field. ref:'inputValue' */}
         {inputValue && (
           <Button
@@ -45,8 +56,8 @@ export default function Home({ userData }) {
             Search
           </Button>
         )}
-        {/* display only when search button has clicked  and also not appear when input field clear after search*/}
-        {inputValue && isClearVisible && (
+        {/* appear only when search button has clicked  and also not appear when input field clear after search*/}
+        {isClearVisible && inputValue && (
           <div className="clear">
             <Button
               colorScheme="gray"
@@ -63,21 +74,21 @@ export default function Home({ userData }) {
       </div>
 
       <div className="container">
-        {userData.map((i) => (
-          <div className="user-data" key={i.id}>
+        {renderUsers.map((user) => (
+          <div className="user-data" key={user.id}>
             <h2>
-              <span className="name">Name:</span> {i.name}
+              <span className="name">Name:</span> {user.name}
             </h2>
             <p>
-              <span className="detail">User Name:</span> {i.username}
+              <span className="detail">User Name:</span> {user.username}
             </p>
             <p>
-              <span className="detail">Email:</span> {i.email}
+              <span className="detail">Email:</span> {user.email}
             </p>
             <p>
-              <span className="detail">Website:</span> {i.website}
+              <span className="detail">Website:</span> {user.website}
             </p>
-            <Link to={`/know-more/${i.id}`}>
+            <Link to={`/know-more/${user.id}`}>
               <Badge colorScheme="green" p="1" className="know-more">
                 Read more
               </Badge>
