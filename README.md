@@ -8,12 +8,13 @@ This React application utilizes various technologies, including React Router, Fe
 <img width="219" alt="Screenshot 2023-12-08 141322" src="https://github.com/ViNu-23/Git-Finder-React-App/assets/59360964/acf3c24e-b435-4efb-962b-02dd14515098">
 
 ## Technologies Used
-React.js: The core library for building the user interface, allowing for the creation of reusable components.
-React Router: Enables navigation and handling different views within the application.
-Fetch API and Async Functions: Used for making asynchronous requests to the GitHub API to retrieve user information.
-Axios: An HTTP client for making requests to the GitHub API, providing a more convenient interface for handling HTTP requests.
-Chakra UI: A modular component library for React applications, facilitating the creation of visually appealing and responsive UI components.
-
+<ol>
+<li>React.js: The core library for building the user interface, allowing for the creation of reusable components.</li>
+<li>React Router: Enables navigation and handling different views within the application.</li>
+<li>Fetch API and Async Functions: Used for making asynchronous requests to the GitHub API to retrieve user information.</li>
+<li>Axios: An HTTP client for making requests to the GitHub API, providing a more convenient interface for handling HTTP requests.</li>
+<li>Chakra UI: A modular component library for React applications, facilitating the creation of visually appealing and responsive UI components.</li>
+</ol>
 ## Features
 User Search: Users can input a GitHub user ID in the search bar, triggering a request to the GitHub API to fetch user details.
 
@@ -30,4 +31,4 @@ Clone the repository:
 Feel free to contribute to the development of this project by submitting bug reports, feature requests, or pull requests. Your feedback and contributions are highly appreciated.
 
 ## Live Demo
-https://gitfinderreactapp.netlify.app/
+https://git-finder-react-app.netlify.app/
