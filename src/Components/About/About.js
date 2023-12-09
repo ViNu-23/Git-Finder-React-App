@@ -8,6 +8,7 @@ export default function About() {
   return (
     <>
       <Navbar />
+      
       <div className="about-container">
         <h2>About Git Finder</h2>
         <p className="about-text">

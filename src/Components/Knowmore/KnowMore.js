@@ -69,7 +69,6 @@ export default function KnowMore({ userData }) {
               <th>Longitude:</th>
               <td>{selectedUser.address.geo.lng}</td>
             </tr>
-            {/* Accessing fields from the 'company' object */}
             <tr>
               <th>Company Name:</th>
               <td>{selectedUser.company.name}</td>

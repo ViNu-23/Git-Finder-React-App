@@ -87,7 +87,7 @@ li {
   .nav-links {
     flex-direction: column;
     position: absolute;
-    top: 55px; 
+    top: 55px;
     left: 0;
     width: 100%;
     background-color: #f0fff4;
@@ -117,21 +117,37 @@ li {
 .bar3.rotate-up {
   transform: translateY(-6px) rotate(45deg);
 }
+/* easter egg */
 @keyframes glowingAnimation {
   0% {
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 0, 0),
+      rgb(0, 255, 0),
+      rgb(0, 0, 255)
+    );
   }
   50% {
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 0, 255), rgb(255, 0, 0));
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 255, 0),
+      rgb(0, 0, 255),
+      rgb(255, 0, 0)
+    );
   }
   100% {
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0), rgb(0, 255, 0));
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 255),
+      rgb(255, 0, 0),
+      rgb(0, 255, 0)
+    );
   }
 }
 

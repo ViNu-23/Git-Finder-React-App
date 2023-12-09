@@ -20,22 +20,26 @@
 .about-container li {
   margin-bottom: 10px;
 }
+
 .git-logo-about {
   color: #2f855a;
   height: auto;
   width: 35px;
   padding-left: 10px;
 }
-.footer{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 20px;
+
+.footer {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
 }
-h2{
+
+h2 {
   font-size: 25px;
 }
-.about-text{
+
+.about-text {
   font-size: 15px;
-  text-align:justify;
+  text-align: justify;
 }
