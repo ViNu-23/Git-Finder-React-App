@@ -13,6 +13,7 @@ export default function App() {
     try {
       const response = await axios.get(
         "https://jsonplaceholder.typicode.com/users"
+        //replace from git Api to jsonplaceholder due to api ecxeed limit reach issue
       );
 
       setUser(response.data);
